@@ -31,7 +31,6 @@ index.html                       Home
 our-services/                    Our Services, plus one folder per service
   holiday-home-sales/ holiday-sales/ marketing/ training/ events/ pitch-yield/
 our-story/                       Our Story
-our-team/                        One profile page per team member (linked from Our Story)
 our-network/                     Our Network (partner profiles)
 our-blog/                        Our Blog, plus one folder per post
 contact/                         Contact Us
@@ -51,7 +50,6 @@ The wording, photos and partner details on every page come from the current webs
 ## Still to do
 
 - **Newsletter form:** connect it to your newsletter provider. Look for the `TODO` comment near the bottom of each page.
-- **Gary Smith's photo** is a placeholder silhouette on the current website too.
 
 ## Brand
 
