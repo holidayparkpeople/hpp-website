@@ -31,7 +31,7 @@ index.html                       Home
 our-services/                    Our Services, plus one folder per service
   holiday-home-sales/ holiday-sales/ marketing/ training/ events/ pitch-yield/
 our-story/                       Our Story
-our-team/                        Meet the team, plus one folder per person
+our-team/                        One profile page per team member (linked from Our Story)
 our-network/                     Our Network (partner profiles)
 our-blog/                        Our Blog, plus one folder per post
 contact/                         Contact Us
@@ -51,8 +51,6 @@ The wording, photos and partner details on every page come from the current webs
 ## Still to do
 
 - **Newsletter form:** connect it to your newsletter provider. Look for the `TODO` comment near the bottom of each page.
-- **Outdoor Living's link** on Our Network goes to thecaravanclub.co.uk, the same as on the current website. It probably needs Outdoor Living's own address.
-- **Privacy Policy address:** the "Contact Us" section of the Privacy Policy still shows the old address (2/4 Coastal Road, Hest Bank, LA2 6HN). The footer uses Askam House, Hampson, LA2 0HY.
 - **Gary Smith's photo** is a placeholder silhouette on the current website too.
 
 ## Brand
