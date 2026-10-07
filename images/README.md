@@ -1,12 +1,13 @@
 # Images
 
-Add the site's photos and partner logos here. The page picks them up automatically.
+Photos and logos used across the site, copied from the current website.
 
-- `hero.webp` — the homepage hero photo (Woodside Luxury Lodges). Landscape or square, at least 1600px wide.
-- `network/` — partner logos, using these file names:
-  victory-logo.png, prestige-logo.png, citinow-logo.webp, swift-logo.webp, elite-logo.png,
-  leisuredays-logo.png, playitgreen-logo.png, lakeland-logo.png, colliers-logo.png,
-  holidaymaker-logo.svg, outdoorliving-logo.png, dfcapital-logo.jpg, parksync-logo.png, parcvu-logo.png
+- `hero.webp` — homepage hero photo (Woodside Luxury Lodges)
+- `our-story.webp`, `team.webp`, `network.webp`, `blog.webp`, `contact.webp` — page header photos
+- `services/` — service header photos; `services/detail/` — the second photo on each service page
+- `members/` — team headshots, named after each person's page (for example `stacey-hope.webp`)
+- `network/` — partner logos
+- `blog/` — blog post photos (`blog-1` is the oldest post)
+- `friendship.webp`, `wwtw-logo-c.webp` — used on Our Story
 
-These are the same file names the current website uses, so they can be copied straight across.
-Until a partner logo is added, the partner's name is shown in its place.
+To swap a photo, replace the file and keep the same name.

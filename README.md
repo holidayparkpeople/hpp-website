@@ -1,6 +1,8 @@
 # The Holiday Park People — website
 
-The rebranded homepage for [holidayparkpeople.co.uk](https://www.holidayparkpeople.co.uk), built as a plain static site (HTML, CSS and a little JavaScript). No build step and nothing to install.
+The rebranded website for [holidayparkpeople.co.uk](https://www.holidayparkpeople.co.uk), built as a plain static site (HTML, CSS and a little JavaScript). No build step and nothing to install.
+
+Live preview: https://holidayparkpeople.github.io/hpp-website/
 
 ## Preview it on GitHub Pages
 
@@ -14,27 +16,44 @@ To use your own domain later, add it under **Settings → Pages → Custom domai
 
 ## Preview it on your computer
 
-Open `index.html` in a browser. (The podcast player and fonts need an internet connection.)
+Each page lives in its own folder (for example `our-services/index.html`) so the web addresses stay tidy, like `/our-services/`. Browsers don't follow folder links when you open files directly, so run a small local server from this folder instead:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit http://localhost:8000. (The podcast player and fonts need an internet connection.)
 
 ## What's where
 
 ```
-index.html               The homepage
-assets/css/styles.css    All styling. Brand colours, fonts and spacing are set at the top.
-assets/js/main.js        Mobile menu and partner-logo fallback
-assets/img/logo/         Logo and monogram (SVG)
-assets/img/icons/        Doodle service icons
-images/                  Photos and partner logos (see images/README.md)
-favicon.*, *.png         Favicons and app icons
-site.webmanifest         App icon settings
+index.html                       Home
+our-services/                    Our Services, plus one folder per service
+  holiday-home-sales/ holiday-sales/ marketing/ training/ events/ pitch-yield/
+our-story/                       Our Story
+our-team/                        Meet the team, plus one folder per person
+our-network/                     Our Network (partner profiles)
+our-blog/                        Our Blog, plus one folder per post
+contact/                         Contact Us
+privacy-policy/  terms-and-conditions/
+sitemap.xml                      List of every page, for search engines
+assets/css/styles.css            All styling. Brand colours, fonts and spacing are set at the top.
+assets/js/main.js                Mobile menu and partner-logo fallback
+assets/img/logo/                 Logo and monogram (SVG)
+assets/img/icons/                Doodle service icons
+images/                          Photos, team headshots, partner logos and blog images
+favicon.*, *.png                 Favicons and app icons
+site.webmanifest                 App icon settings
 ```
+
+The wording, photos and partner details on every page come from the current website.
 
 ## Still to do
 
-- **Photos and partner logos:** add them to `images/` (see `images/README.md`).
-- **Newsletter form:** connect it to your newsletter provider. Look for the `TODO` comment in `index.html`.
-- **Inner pages:** Our Services, Our Story, Our Network, Our Blog and Contact. For now the menu links go to the pages on the current website.
-- **Small copy check:** the blog card's small label says "Our story" (as on the current site). It may have been meant to say "Our blog".
+- **Newsletter form:** connect it to your newsletter provider. Look for the `TODO` comment near the bottom of each page.
+- **Outdoor Living's link** on Our Network goes to thecaravanclub.co.uk, the same as on the current website. It probably needs Outdoor Living's own address.
+- **Privacy Policy address:** the "Contact Us" section of the Privacy Policy still shows the old address (2/4 Coastal Road, Hest Bank, LA2 6HN). The footer uses Askam House, Hampson, LA2 0HY.
+- **Gary Smith's photo** is a placeholder silhouette on the current website too.
 
 ## Brand
 
