@@ -144,7 +144,7 @@ h1, h2, h3 { margin: 0; }
 .hero { background: var(--night); color: var(--cream); }
 .hero .wrap {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 56px;
   align-items: center;
   padding-top: 88px; padding-bottom: 96px;
@@ -176,15 +176,9 @@ h1, h2, h3 { margin: 0; }
   font-size: 40px; line-height: 1.1; color: var(--sage);
 }
 
-.hero__media { margin: 0; position: relative; }
-.hero__photo {
-  min-height: 520px;
-  background-color: var(--slate-tint);
-  background-image: url("../../images/hero.webp");
-  background-size: cover;
-  background-position: center;
-  border-radius: 58% 42% 46% 54% / 44% 52% 48% 56%;
-}
+
+
+/* Photo caption pill (used on service page photos) */
 .hero__caption {
   position: absolute; left: var(--space-4); bottom: var(--space-4);
   background: var(--cream); color: var(--teal);
@@ -367,7 +361,6 @@ h1, h2, h3 { margin: 0; }
   .hero .wrap, .intro__grid, .podcast .wrap, .stories .wrap, .newsletter .wrap,
   .cards, .site-footer .wrap--cols { grid-template-columns: minmax(0, 1fr); }
   .hero .wrap { padding-top: 56px; padding-bottom: 64px; gap: var(--space-5); }
-  .hero__photo { min-height: 300px; }
   .intro__grid, .podcast .wrap, .stories .wrap, .partners .wrap { padding-top: 64px; padding-bottom: 64px; }
   .cards { padding-bottom: 64px; }
   .section-title, .podcast .section-title { font-size: 40px; letter-spacing: -1px; }
@@ -397,11 +390,10 @@ h1, h2, h3 { margin: 0; }
 /* Page hero */
 .page-hero { background: var(--night); color: var(--cream); }
 .page-hero .wrap {
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid; grid-template-columns: minmax(0, 1fr);
   gap: 56px; align-items: center;
   padding-top: 72px; padding-bottom: 80px;
 }
-.page-hero--plain .wrap { grid-template-columns: minmax(0, 1fr); }
 .page-hero__copy { display: flex; flex-direction: column; gap: 24px; }
 .page-hero__eyebrow {
   font-family: var(--font-display); font-weight: 700;
@@ -411,11 +403,6 @@ h1, h2, h3 { margin: 0; }
 .page-hero h1 {
   font-family: var(--font-display); font-weight: 500;
   font-size: 32px; line-height: 1.2; letter-spacing: -.5px; max-width: 520px;
-}
-.page-hero__media { margin: 0; position: relative; }
-.page-hero__media img {
-  width: 100%; height: 440px; object-fit: cover;
-  border-radius: 58% 42% 46% 54% / 44% 52% 48% 56%;
 }
 .tagline--navy { color: var(--slate-deep); font-size: 32px; }
 
@@ -615,8 +602,7 @@ address.card__text { font-style: normal; }
   .page-hero .wrap, .split, .svc-grid, .features, .profile__grid, .profile__body,
   .post-feature, .post-grid, .post-nav, .partner-entry { grid-template-columns: minmax(0, 1fr); }
   .page-hero .wrap { padding-top: 48px; padding-bottom: 56px; gap: var(--space-5); }
-  .page-hero__media img { height: 280px; }
-  .page-hero h1 { font-size: 26px; }
+    .page-hero h1 { font-size: 26px; }
   .split--reverse .split__copy { order: 0; }
   .split__media--portrait img { margin: 0; }
   .section-title--md { font-size: 36px; }
