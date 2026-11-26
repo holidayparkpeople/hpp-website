@@ -38,8 +38,8 @@ privacy-policy/  terms-and-conditions/
 sitemap.xml                      List of every page, for search engines
 assets/css/styles.css            All styling. Brand colours, fonts and spacing are set at the top.
 assets/js/main.js                Mobile menu and partner-logo fallback
-assets/img/logo/                 Logo and monogram (SVG)
-assets/img/icons/                Doodle service icons
+assets/img/logo/                 Logos: horizontal (primary, navy, reversed, white) and hpp monograms
+assets/img/icons/                Doodle icons, recoloured to the brand palette
 images/                          Photos, team headshots, partner logos and blog images
 favicon.*, *.png                 Favicons and app icons
 site.webmanifest                 App icon settings
@@ -53,5 +53,6 @@ The wording, photos and partner details on every page come from the current webs
 
 ## Brand
 
-Colours: Navy `#111844`, Rose red `#AA1945`, Soft coral `#F2B8A6`, Cream `#F7EFE6`, Blush `#FBE7DF`, Sage mist `#DCE5D7`, Carafe `#69524B`, Peach `#DBB396`.
+Colours: Deep teal `#1F3647`, Ink `#1B1F2D`, Slate blue `#67838E`, Sage `#A6AC9E`, Cream `#F6EFE7`.
+Supporting tints used on the site: darker slate `#4A6470` (small accent text and buttons, for readability on cream), light sage `#E7E9E2` and light slate `#DCE5E8` (panels).
 Fonts (Google Fonts): Bricolage Grotesque (headlines), DM Sans (body), Instrument Serif Italic (tagline).
