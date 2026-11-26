@@ -142,36 +142,32 @@ h1, h2, h3 { margin: 0; }
 .site-nav a.btn { color: var(--white); padding: 12px 22px; min-height: 44px; }
 
 /* ---------- Hero ---------- */
-.hero { background: var(--night); color: var(--cream); }
-.hero .wrap {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 56px;
-  align-items: center;
-  padding-top: 88px; padding-bottom: 96px;
+/* Homepage hero photo: images/home-hero.png (cut out, transparent background).
+   The navy overlay dims the photo so the headline stays readable. */
+.hero {
+  color: var(--cream);
+  background-color: var(--night);
+  background-image:
+    linear-gradient(rgba(26, 31, 46, .62), rgba(26, 31, 46, .62)),
+    url("../../images/home-hero.png");
+  background-size: cover, cover;
+  background-position: center bottom, center bottom;
+  background-repeat: no-repeat;
 }
-.hero__copy { display: flex; flex-direction: column; gap: 28px; }
-.hero__name {
-  display: flex; flex-direction: column;
-  font-family: var(--font-display);
-  line-height: .92;
+.hero__inner {
+  min-height: clamp(460px, 56.25vw, 900px); /* matches the photo's 16:9 shape */
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  gap: 36px; text-align: center;
+  padding-top: clamp(96px, 14vw, 230px); padding-bottom: 96px;
 }
-.hero__the { font-size: 36px; font-weight: 500; color: var(--white); }
-.hero__big {
-  font-size: clamp(64px, 8vw, 104px);
-  font-weight: 700; letter-spacing: -3px;
-  color: var(--accent-dark);
+.hero__title {
+  display: inline-block; width: fit-content; max-width: 100%;
+  padding-left: 24px; border-left: 3px solid var(--cream);
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(36px, 5.2vw, 64px); line-height: 1.08; letter-spacing: -1.5px;
+  color: var(--cream);
 }
-.hero__people {
-  font-size: clamp(40px, 4.5vw, 56px);
-  font-weight: 500; letter-spacing: -1px;
-  color: var(--white); margin-top: 6px;
-}
-.hero h1 {
-  font-family: var(--font-display);
-  font-weight: 500; font-size: 30px; line-height: 1.2; letter-spacing: -.5px;
-  max-width: 480px;
-}
+.hero__title .hl { color: var(--accent-dark); }
 .tagline {
   font-family: var(--font-serif); font-style: italic; font-weight: 400;
   font-size: 40px; line-height: 1.1; color: var(--accent-dark);
@@ -359,9 +355,11 @@ h1, h2, h3 { margin: 0; }
   .site-nav ul { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
   .site-nav a { font-size: 18px; }
 
-  .hero .wrap, .intro__grid, .podcast .wrap, .stories .wrap, .newsletter .wrap,
+  .intro__grid, .podcast .wrap, .stories .wrap, .newsletter .wrap,
   .cards, .site-footer .wrap--cols { grid-template-columns: minmax(0, 1fr); }
-  .hero .wrap { padding-top: 56px; padding-bottom: 64px; gap: var(--space-5); }
+  .hero__title { padding-left: 16px; letter-spacing: -1px; }
+  .hero { background-size: cover, 100% auto; }
+  .hero__inner { min-height: 0; padding-top: 72px; padding-bottom: calc(56vw + 24px); }
   .intro__grid, .podcast .wrap, .stories .wrap, .partners .wrap { padding-top: 64px; padding-bottom: 64px; }
   .cards { padding-bottom: 64px; }
   .section-title, .podcast .section-title { font-size: 40px; letter-spacing: -1px; }
