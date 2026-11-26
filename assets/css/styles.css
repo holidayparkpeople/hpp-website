@@ -151,14 +151,14 @@ h1, h2, h3 { margin: 0; }
     linear-gradient(rgba(26, 31, 46, .62), rgba(26, 31, 46, .62)),
     url("../../images/home-hero.png");
   background-size: cover, cover;
-  background-position: center bottom, center bottom;
+  background-position: center, center 36%; /* frames heads and the sofa back */
   background-repeat: no-repeat;
 }
 .hero__inner {
-  min-height: clamp(460px, 56.25vw, 900px); /* matches the photo's 16:9 shape */
-  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  min-height: clamp(300px, 28vw, 450px);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 36px; text-align: center;
-  padding-top: clamp(96px, 14vw, 230px); padding-bottom: 96px;
+  padding-top: 56px; padding-bottom: 56px;
 }
 .hero__title {
   display: inline-block; width: fit-content; max-width: 100%;
@@ -358,7 +358,7 @@ h1, h2, h3 { margin: 0; }
   .intro__grid, .podcast .wrap, .stories .wrap, .newsletter .wrap,
   .cards, .site-footer .wrap--cols { grid-template-columns: minmax(0, 1fr); }
   .hero__title { padding-left: 16px; letter-spacing: -1px; }
-  .hero { background-size: cover, 100% auto; }
+  .hero { background-size: cover, 100% auto; background-position: center, center bottom; }
   .hero__inner { min-height: 0; padding-top: 72px; padding-bottom: calc(56vw + 24px); }
   .intro__grid, .podcast .wrap, .stories .wrap, .partners .wrap { padding-top: 64px; padding-bottom: 64px; }
   .cards { padding-bottom: 64px; }
